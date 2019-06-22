@@ -26,6 +26,9 @@
         <link href="<?php echo base_url(); ?>/assets/global/css/components.min.css" rel="stylesheet" id="style_components" type="text/css" />
         <link href="<?php echo base_url(); ?>/assets/global/css/plugins.min.css" rel="stylesheet" type="text/css" />
         <!-- END THEME GLOBAL STYLES -->
+        <!-- DataTables -->
+        <link href="<?php echo base_url(); ?>/assets/global/plugins/datatables/datatables.min.css" rel="stylesheet" type="text/css" />
+        <link href="<?php echo base_url(); ?>/assets/global/plugins/datatables/datatables.bootstrap.css" rel="stylesheet" type="text/css" />
         <!-- BEGIN THEME LAYOUT STYLES -->
         <link href="<?php echo base_url(); ?>/assets/layouts/layout2/css/layout.min.css" rel="stylesheet" type="text/css" />
         <link href="<?php echo base_url(); ?>/assets/layouts/layout2/css/themes/blue.min.css" rel="stylesheet" type="text/css" id="style_color" />
