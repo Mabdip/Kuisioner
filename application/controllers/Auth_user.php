@@ -74,6 +74,12 @@ class Auth_user extends CI_Controller {
         
     }
 
+    public function register()
+    {
+        
+        $this->load->view('register/register_user');
+    }
+
 }
 
 /* End of file Auth_user.php */
