@@ -15,7 +15,7 @@ class Auth extends CI_Controller {
     {
         $data['judul'] = "Login";
         $data['isi']   = 'login/login';
-        $this->load->view('login/template/layout', $data);
+        $this->load->view('login/template_admin/layout', $data);
     }
 
     public function admin_login()

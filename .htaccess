@@ -3,4 +3,4 @@
   RewriteCond $1 !^(index\\.php|resources|robots\\.txt)
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteRule ^(.+)$ /kuisioner/index.php?/$1 [L,QSA]
+  RewriteRule ^(.+)$ /Moora/index.php?/$1 [L,QSA]

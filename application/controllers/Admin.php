@@ -21,6 +21,13 @@ class Admin extends CI_Controller {
         $this->load->view('admin/template/layout', $data);
     }
 
+    public function tambah_pertanyaan()
+    {
+        $data['judul'] = "Admin | Tambah Pertanyaan";
+        $data['isi']   = 'admin/tambah_pertanyaan';
+        $this->load->view('admin/template/layout', $data); 
+    }
+
     public function logout()
     {
         $this->session->sess_destroy();
