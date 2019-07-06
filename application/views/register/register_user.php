@@ -46,7 +46,7 @@
                 <div class="form-group">
                     <label for="nama" class="col-sm-3 control-label">Nama</label>
                     <div class="col-sm-9">
-                        <input name="nama" type="text" id="nama" placeholder="nama" class="form-control" autofocus>
+                        <input name="nama" type="text" id="nama" placeholder="nama" class="form-control" required autofocus>
                     </div>
                 </div>
                 <div class="form-group">
@@ -60,25 +60,25 @@
                 <div class="form-group">
                     <label for="email" class="col-sm-3 control-label">Email</label>
                     <div class="col-sm-9">
-                        <input name="email" type="email" id="email" placeholder="Email" class="form-control" name= "email">
+                        <input name="email" type="email" id="email" placeholder="Email" class="form-control" required name= "email">
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="username" class="col-sm-3 control-label">Username</label>
                     <div class="col-sm-9">
-                        <input name="username" type="text" id="username" placeholder="username" class="form-control" autofocus>
+                        <input name="username" type="text" id="username" placeholder="username" class="form-control" required autofocus>
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="password" class="col-sm-3 control-label">Password</label>
                     <div class="col-sm-9">
-                        <input name="password" type="password" id="password" placeholder="Password" class="form-control">
+                        <input name="password" type="password" id="password" placeholder="Password" required class="form-control">
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="tahun lulus" class="col-sm-3 control-label">Tahun Lulus</label>
                     <div class="col-sm-9">
-                        <input name="tahun_lulus" type="text" id="tahun_lulus" placeholder="tahun lulus" class="form-control">
+                        <input name="tahun_lulus" type="number" id="tahun_lulus" placeholder="tahun lulus" required class="form-control">
                     </div>
                 </div>
                 <div class="form-group">
@@ -87,7 +87,7 @@
                         <div class="row">
                             <div class="col-sm-2">
                                 <label class="radio-inline">
-                                    <input onchange="bekerja('ya')" name="sudah_bekerja" type="radio" id="yaRadio" value="ya">Ya
+                                    <input onchange="bekerja('ya')" name="sudah_bekerja" type="radio" required id="yaRadio" value="ya">Ya
                                 </label>
                             </div>
                             <div class="col-sm-4">
@@ -101,7 +101,7 @@
                 <div class="form-group ketkerja" style="display: none;">
                     <label for="nama_perusahaan" class="col-sm-3 control-label">Nama Perusahaan</label>
                     <div class="col-sm-9">
-                        <input name="nama_perusahaan" type="text" id="nama_perusahaan" placeholder="nama perusahaan" class="form-control">
+                        <input name="nama_perusahaan" type="text" id="nama_perusahaan"  placeholder="nama perusahaan" class="form-control">
                     </div>
                 </div>
                 <div class="form-group ketkerja" style="display: none;">
@@ -133,7 +133,7 @@
             }
 
             function prestasi() {
-                var x = '<div class="form-group"><label for="nama_kegiatan" class="col-sm-3 control-label">Prestasi</label><div class="col-sm-4"><input name="nama_kegiatan[]" type="text" placeholder="nama kegiatan" class="form-control"></div><div class="col-sm-2"><input name="tahun_kegiatan[]" type="text" placeholder="tahun" class="form-control"></div><div class="col-sm-3"><select name="tingkat[]" class="form-control" style="height: 34px;"><option value="kota">kota/kabupaten</option><option value="nasional">Nasional</option><option value="internasional">Internasional</option></select></div></div>';
+                var x = '<div class="form-group"><label for="nama_kegiatan" class="col-sm-3 control-label">Prestasi</label><div class="col-sm-4"><input name="nama_kegiatan[]" type="text" placeholder="nama kegiatan" class="form-control"></div><div class="col-sm-2"><input name="tahun_kegiatan[]" type="text" placeholder="tahun" class="form-control"></div><div class="col-sm-3"><select name="tingkat_kegiatan[]" class="form-control" style="height: 34px;"><option value="kota">kota/kabupaten</option><option value="nasional">Nasional</option><option value="internasional">Internasional</option></select></div></div>';
                 $('#prestasiwrap').append(x);
             }
         </script>

@@ -6,6 +6,7 @@ class User_m extends CI_Model {
     public function tambah($tabel, $data)
     {
         $this->db->insert($tabel, $data);
+        return $this->db->insert_id();
     }
 
 }
