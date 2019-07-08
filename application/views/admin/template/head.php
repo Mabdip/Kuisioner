@@ -14,6 +14,7 @@
         <link href="<?php echo base_url(); ?>/assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
         <link href="<?php echo base_url(); ?>/assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
         <link href="<?php echo base_url(); ?>/assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        
         <link href="<?php echo base_url(); ?>/assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css" />
         <!-- END GLOBAL MANDATORY STYLES -->
         <!-- BEGIN PAGE LEVEL PLUGINS -->
@@ -30,6 +31,11 @@
         <link href="<?php echo base_url(); ?>/assets/layouts/layout2/css/layout.min.css" rel="stylesheet" type="text/css" />
         <link href="<?php echo base_url(); ?>/assets/layouts/layout2/css/themes/blue.min.css" rel="stylesheet" type="text/css" id="style_color" />
         <link href="<?php echo base_url(); ?>/assets/layouts/layout2/css/custom.min.css" rel="stylesheet" type="text/css" />
+        <!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.css"> -->
+        <link rel="stylesheet" type="text/css" href="<?= base_url('assets/dt') ?>/dataTables.bootstrap4.min.css">
+        <script type="text/javascript" src="<?= base_url('assets/dt') ?>/jquery-3.3.1.js"></script>
+        <script type="text/javascript" src="<?= base_url('assets/dt') ?>jquery.dataTables.min.js"></script>
+        <script type="text/javascript" src="<?= base_url('assets/dt') ?>/dataTables.bootstrap4.min.js"></script>
         <!-- END THEME LAYOUT STYLES -->
         <link rel="shortcut icon" href="favicon.ico" /> </head>
     <!-- END HEAD -->

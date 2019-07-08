@@ -10,7 +10,7 @@
             <!-- BEGIN LOGIN FORM -->
             <form class="login-form" action="<?php echo site_url('auth/admin_login');?>" method="post">
                 <div class="form-title">
-                    <span class="form-title">Selamat Datang.</span>
+                    <span class="form-title">Selamat Datang Admin.</span>
                     <span class="form-subtitle">Silahkan Login.</span>
                 </div>
                 <div class="form-group">
@@ -23,12 +23,8 @@
                 <div class="form-actions">
                     <button type="submit" name="login" class="btn red btn-block uppercase">Login</button>
                 </div>
-                <p style="text-align: center;text-transform: Uppercase; color: white;"> Atau </p>
-                <div class="create-account">
-                    <p>
-                        <a href="javascript:;" class="btn-primary btn" id="register-btn" style="width: 100%;">Daftar</a>
-                    </p>
-                </div>
+                
+                
             </form>
 </div>
             <!-- END LOGIN FORM -->

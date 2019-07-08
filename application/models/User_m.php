@@ -9,6 +9,11 @@ class User_m extends CI_Model {
         return $this->db->insert_id();
     }
 
+    public function ambil_data()
+    {
+    	return $this->db->get('user')->result();
+    }
+
 }
 
 /* End of file User_m.php */

@@ -12,6 +12,7 @@ class Admin extends CI_Controller {
             redirect(site_url('auth'));
             
         }
+        $this->load->model('user_m');
     }
     
     public function index()
@@ -26,6 +27,14 @@ class Admin extends CI_Controller {
         $data['judul'] = "Admin | Tambah Pertanyaan";
         $data['isi']   = 'admin/tambah_pertanyaan';
         $this->load->view('admin/template/layout', $data); 
+    }
+
+    public function alumni()
+    {
+        $data['alumni'] = $this->user_m->ambil_data();
+        $data['judul'] = "Admin | Kuisioner";
+        $data['isi']   = 'admin/alumni_view';
+        $this->load->view('admin/template/layout', $data);
     }
 
     public function logout()

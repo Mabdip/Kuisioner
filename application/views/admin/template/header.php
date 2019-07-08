@@ -6,7 +6,7 @@
                 <!-- BEGIN LOGO -->
                 <div class="page-logo">
                     <a href="index.html">
-                        <img src="../assets/layouts/layout2/img/logo-default.png" alt="logo" class="logo-default" /> </a>
+                        <img src="<?php echo base_url(); ?>/assets/layouts/layout2/img/logo-default.png" alt="logo" class="logo-default" /> </a>
                     <div class="menu-toggler sidebar-toggler">
                         <!-- DOC: Remove the above "hide" to enable the sidebar toggler button on header -->
                     </div>
@@ -20,7 +20,7 @@
                 <div class="page-top">
                     <!-- BEGIN HEADER SEARCH BOX -->
                     <!-- DOC: Apply "search-form-expanded" right after the "search-form" class to have half expanded search box -->
-                    <form class="search-form search-form-expanded" action="page_general_search_3.html" method="GET">
+                    <!-- <form class="search-form search-form-expanded" action="page_general_search_3.html" method="GET">
                         <div class="input-group">
                             <input type="text" class="form-control" placeholder="Search..." name="query">
                             <span class="input-group-btn">
@@ -29,7 +29,7 @@
                                 </a>
                             </span>
                         </div>
-                    </form>
+                    </form> -->
                     <!-- END HEADER SEARCH BOX -->
                     <!-- BEGIN TOP NAVIGATION MENU -->
                     <div class="top-menu">
@@ -66,9 +66,9 @@
                             <!-- END TODO DROPDOWN -->
                             <!-- BEGIN USER LOGIN DROPDOWN -->
                             <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
-                            <li class="dropdown dropdown-user">
+                            <!-- <li class="dropdown dropdown-user">
                                 <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
-                                    <img alt="" class="img-circle" src="../assets/layouts/layout2/img/avatar3_small.jpg" />
+                                    <img alt="" class="img-circle" src="<?php echo base_url(); ?>/assets/layouts/layout2/img/avatar3_small.jpg" />
                                     <span class="username username-hide-on-mobile"> <?php echo $this->session->userdata('nama'); ?> </span>
                                     <i class="fa fa-angle-down"></i>
                                 </a>
@@ -88,13 +88,13 @@
                                             <i class="icon-key"></i> Log Out </a>
                                     </li>
                                 </ul>
-                            </li>
+                            </li> -->
                             <!-- END USER LOGIN DROPDOWN -->
                             <!-- BEGIN QUICK SIDEBAR TOGGLER -->
                             <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
                             <li class="dropdown dropdown-extended quick-sidebar-toggler">
                                 <span class="sr-only">Toggle Quick Sidebar</span>
-                                <i class="icon-logout"></i>
+                                <a href="<?= base_url('admin/logout') ?>"><i class="icon-logout"></i></a>
                             </li>
                             <!-- END QUICK SIDEBAR TOGGLER -->
                         </ul>
